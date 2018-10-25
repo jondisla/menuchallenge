@@ -1,0 +1,188 @@
+body {
+  background: #212121;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.menu1 {
+  color: white;
+}
+
+.menu1 .container {
+  height: 100%;
+}
+
+.menu1 a {
+  color: #b500b5;
+  text-decoration: none;
+}
+
+.menu1 ul {
+  list-style: none;
+  width: 50%;
+}
+
+.menu1 li {
+  width: 100%;
+  margin: 4px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.menu1 .menu {
+  height: 100vh;
+}
+
+.menu1 .menu .menu1style {
+  margin-left: 25px;
+  border-bottom: 2px solid yellow;
+  border-radius: 15%;
+  margin-left: 25px;
+}
+
+.menu1 .menu a {
+  color: white;
+}
+
+.menu1 .menu #menu1:hover,
+.menu1 .menu #menu2:hover,
+.menu1 .menu #menu3:hover,
+.menu1 .menu #menu4:hover {
+  border-bottom: yellow dotted;
+  border-radius: 15%;
+}
+
+.menu1 .menu #wavy-line {
+  width: 180px;
+  margin-left: -30px;
+}
+
+.menu1 .menu .wavy-flip {
+  -webkit-transform: rotate(180deg) scaleX(-1);
+          transform: rotate(180deg) scaleX(-1);
+}
+
+.menu1 .menu .sig {
+  position: absolute;
+  bottom: 0;
+}
+
+.menu1 .dropline {
+  position: absolute;
+  background-image: url(/assets/img/whitebg.png);
+  background-size: 100%;
+  left: 30%;
+  margin-top: -150px;
+  opacity: .97;
+}
+
+.menu1 .dropline #thing {
+  margin-top: 10%;
+  height: 300px;
+  width: 600px;
+  color: red;
+  text-align: center;
+}
+
+.menu1 .content {
+  color: white;
+  font-size: 40px;
+}
+
+.menu1 .content1 {
+  background: #ffdfa5;
+  position: absolute;
+  width: 100vw;
+  right: 0;
+  height: 100%;
+}
+
+.menu1 .content2 {
+  background: #fe7f7f;
+  display: none;
+  position: absolute;
+  width: 100vw;
+  right: 0;
+  height: 100%;
+}
+
+.menu1 .content3 {
+  background: #6c6cff;
+  display: none;
+  position: absolute;
+  width: 100vw;
+  right: 0;
+  height: 100%;
+}
+
+.menu1 .content4 {
+  background: #A2CE50;
+  display: none;
+  position: absolute;
+  width: 100vw;
+  right: 0;
+  height: 100%;
+}
+
+.menu1 .home,
+.menu1 .services,
+.menu1 .about,
+.menu1 .contact {
+  color: #8d47a3;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 25%;
+  line-height: 80px;
+  font-size: 80px;
+}
+
+.menu1 .image {
+  position: relative;
+  width: 80%;
+  margin-left: -60px;
+}
+
+.menu1 .image #cphase {
+  width: 280px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .menu1 #cphase {
+    display: none;
+  }
+  .menu1 #menuul {
+    margin-left: 30px;
+    display: inline;
+  }
+  .menu1 .image {
+    display: inline;
+  }
+  .menu1 li {
+    display: inline;
+    font-size: 20px;
+  }
+  .menu1 #wavy-line {
+    display: none;
+  }
+  .menu1 .sig {
+    display: none;
+  }
+  .content .dropline,
+  .content #thing {
+    display: none;
+  }
+  .content .home,
+  .content .services,
+  .content .about,
+  .content .contact {
+    font-size: 30px !important;
+  }
+  .content .content1,
+  .content .content2,
+  .content .content3,
+  .content .content4 {
+    margin-top: 15%;
+    height: 100% !important;
+  }
+}
+/*# sourceMappingURL=main.css.map */

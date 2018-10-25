@@ -1,0 +1,220 @@
+$menu1color: rgb(181, 0, 181);
+
+body {
+    background: rgb(33, 33, 33);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.menu1 {
+    color: white;
+
+
+
+    .container {
+        // background: rgb(31, 31, 31);
+        height: 100%;
+    }
+
+    a {
+        color: $menu1color;
+        text-decoration: none;
+    }
+
+    ul {
+
+        list-style: none;
+        width: 50%;
+
+    }
+
+    li {
+
+        // display: inline;
+        width: 100%;
+        margin: 4px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+
+
+    .menu {
+        height: 100vh;
+
+        .menu1style {
+            margin-left: 25px;
+            border-bottom: 2px solid yellow;
+            border-radius: 15%;
+            margin-left: 25px;
+        }
+
+        a {
+            color: white;
+        }
+
+        #menu1:hover,
+        #menu2:hover,
+        #menu3:hover,
+        #menu4:hover {
+            // background: rgb(48, 48, 48);
+            border-bottom: yellow dotted;
+            border-radius: 15%;
+        }
+
+        #wavy-line {
+            width: 180px;
+            margin-left: -30px;
+        }
+
+        .wavy-flip {
+            transform: rotate(180deg) scaleX(-1);
+        }
+
+        .sig {
+            position: absolute;
+            bottom: 0;
+        }
+
+    }
+
+    .dropline {
+        position: absolute;
+        background-image: url(/assets/img/whitebg.png);
+        background-size: 100%;
+        left: 30%;
+        margin-top: -150px;
+        opacity: .97;
+
+
+        #thing {
+            margin-top: 10%;
+            ;
+            height: 300px;
+            width: 600px;
+            color: red;
+            text-align: center;
+        }
+    }
+
+    .content {
+        color: white;
+        font-size: 40px;
+    }
+
+    .content1 {
+        background: rgb(255, 223, 165);
+        // display: none;
+        position: absolute;
+        width: 100vw;
+        right: 0;
+        height: 100%;
+
+    }
+
+    .content2 {
+        background: rgb(254, 127, 127);
+        display: none;
+        position: absolute;
+        width: 100vw;
+        right: 0;
+        height: 100%;
+
+    }
+
+    .content3 {
+        background: rgb(108, 108, 255);
+        display: none;
+        position: absolute;
+        width: 100vw;
+        right: 0;
+        height: 100%;
+    }
+
+    .content4 {
+        background: #A2CE50;
+        display: none;
+        position: absolute;
+        width: 100vw;
+        right: 0;
+        height: 100%;
+    }
+
+    .home,
+    .services,
+    .about,
+    .contact {
+        color: rgb(141, 71, 163);
+        text-align: center;
+        vertical-align: middle;
+        margin-top: 25%;
+        line-height: 80px;
+        font-size: 80px;
+    }
+
+    .image {
+        position: relative;
+        // border: 5px solid #8D47A3;
+        width: 80%;
+        margin-left: -60px;
+
+        #cphase {
+            width: 280px;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .menu1 {
+        #cphase {
+            display: none;
+        }
+
+        #menuul {
+            margin-left: 30px;
+            display: inline;
+        }
+
+        .image {
+            display: inline;
+        }
+
+        li {
+            display: inline;
+            font-size: 20px;
+        }
+
+        #wavy-line {
+            display: none;
+        }
+
+        .sig {
+            display: none;
+        }
+
+    }
+
+    .content {
+
+        .dropline,
+        #thing {
+            display: none;
+        }
+
+        .home,
+        .services,
+        .about,
+        .contact {
+            font-size: 30px !important;
+        }
+
+        .content1,
+        .content2,
+        .content3,
+        .content4 {
+            margin-top: 15%;
+            height: 100% !important;
+        }
+    }
+}
